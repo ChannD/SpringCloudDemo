@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-provider-dept-8001</artifactId>
-
+    <artifactId>microservicecloud-provider-dept-hystrix-8001</artifactId>
     <dependencies>
         <dependency><!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
             <groupId>com.chann.springcloud</groupId>
@@ -72,8 +71,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
     </dependencies>
-
 
 </project>
